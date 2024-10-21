@@ -21,7 +21,44 @@
 	
 		function ktora_cwiartka()
 		{
-			
+            const x = parseInt(document.getElementById("x").value);
+            const y = parseInt(document.getElementById("y").value);
+
+            if (x<0 && y<0){
+                
+                document.getElementById("wynik").innerHTML = "trzecia ćwiartka";
+
+            }
+
+            if (x<0 && y>0){
+                
+                document.getElementById("wynik").innerHTML = "druga ćwiartka";
+
+            }
+
+            if (x>0 && y<0){
+                
+                document.getElementById("wynik").innerHTML = "czwarta ćwiartka";
+
+            }
+
+            if (x>0 && y>0){
+                
+                document.getElementById("wynik").innerHTML = "pierwsza ćwiartka";
+
+            }
+
+            if (x==0 && y==0){
+                
+                document.getElementById("wynik").innerHTML = "Punkt P=(0,0) jest początkiem układu współrzędnych";
+
+            }
+
+            if (x==15 && y==96){
+                
+                document.getElementById("wynik").innerHTML = "życiorys Kartezjusza (potem coś ugotuje, sorrki) :(";
+
+            }
 			
 		}
 
